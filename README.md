@@ -1,47 +1,34 @@
-# Astro Starter Kit: Minimal
+# Website Pengurus Daerah Kabupaten Garut Ikatan Notaris Indonesia
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Selamat datang di repositori kode sumber website Pengurus Daerah Kabupaten Garut Ikatan Notaris Indonesia, yang dapat diakses melalui alamat domain [aang.org](http://aang.org). Situs web ini dikembangkan menggunakan teknologi [Astro](https://astro.build) dan [React](https://reactjs.org) untuk memberikan pengalaman pengguna yang optimal.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Teknologi yang Digunakan
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **[Astro](https://astro.build)**: Sebuah framework untuk membangun situs web yang cepat dan ringan. Astro memungkinkan pembuatan situs dengan performa tinggi dengan memanfaatkan pendekatan static site generation.
+- **[React](https://reactjs.org)**: Sebuah library JavaScript untuk membangun antarmuka pengguna. React digunakan untuk mengelola komponen-komponen dinamis pada situs ini, memberikan interaktivitas dan pengalaman pengguna yang baik.
+- library lainnya
 
-## 🚀 Project Structure
+## Kode Sumber Terbuka
 
-Inside of your Astro project, you'll see the following folders and files:
+Kode sumber website ini bersifat terbuka (open source). Anda dapat melihat, mempelajari, dan berkontribusi pada kode sumber yang digunakan untuk mengembangkan situs ini. Kami mendorong kolaborasi dan inovasi dari komunitas pengembang.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Perlindungan Konten
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Walaupun kode sumber website ini bersifat terbuka, isi konten situs ini dilindungi oleh hak cipta. Konten yang dilindungi meliputi teks, gambar, dan segala materi lain yang disajikan di dalam website. Hak cipta ini dimaksudkan untuk melindungi hak-hak intelektual dari pengelola dan penulis konten.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Cara Berkontribusi
 
-Any static assets, like images, can be placed in the `public/` directory.
+Kami mengundang Anda untuk berkontribusi pada pengembangan website ini. Berikut langkah-langkah untuk memulai:
 
-## 🧞 Commands
+1. **Fork repositori ini**.
+2. **Clone repositori hasil fork** ke mesin lokal Anda.
+3. Buat **branch baru** untuk perubahan yang ingin Anda buat.
+4. **Lakukan perubahan** yang diperlukan pada branch tersebut.
+5. **Commit** dan **push** perubahan Anda ke repositori fork Anda.
+6. Buat **pull request** ke repositori utama.
 
-All commands are run from the root of the project, from a terminal:
+## Lisensi
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Kode sumber dalam repositori ini dilisensikan di bawah lisensi [MIT](LICENSE). Harap perhatikan bahwa lisensi ini hanya berlaku untuk kode sumber, tidak termasuk konten yang dilindungi oleh hak cipta.
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Terima kasih telah berkunjung dan berkontribusi!
