@@ -1,0 +1,23 @@
+---
+import siteNav from "@/app/siteNav";
+
+import logoIni from "../assets/logo-ini-text-1.png";
+
+import { Image } from "astro:assets";
+import { MainNavMenu } from "@/components/MainNavMenu";
+import { SideNavMenu } from "@/components/SideNavMenu";
+---
+
+<header class="h-16 border-b border flex items-center sticky top-0">
+    <div class="container flex items-center justify-between">
+        <a href="/">
+            <Image src={logoIni} alt="logo ini" height={24} />
+        </a>
+        <div class="hidden lg:block">
+            <MainNavMenu dataMenu={siteNav} client:load />
+        </div>
+        <div class="lg:hidden">
+            <SideNavMenu dataMenu={siteNav} client:load/>
+        </div>
+    </div>
+</header>

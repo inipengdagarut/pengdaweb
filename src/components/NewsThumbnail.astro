@@ -1,0 +1,29 @@
+---
+interface Props {
+    title: string;
+    postDate: string;
+    author: string;
+    href: string;
+    image?: string;
+}
+import { Image } from "astro:assets";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+
+const { title, postDate, author, href, image } = Astro.props;
+---
+
+<Card className="overflow-hidden relative" client:load>
+    <Image src={image} alt={title} class="w-full aspect-[16/10] object-cover object-center"/>
+    <div class="w-full aspect-[16/10] absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-red-950 to-transparent hover:to-pink-500 opacity-90 hover:opacity-80"></div>
+    <CardHeader className="absolute bottom-0 left-0 right-0 text-primary-foreground">
+        <CardTitle>{title}</CardTitle>
+        <CardDescription className="text-primary-foreground">{postDate}</CardDescription>
+    </CardHeader>
+</Card>

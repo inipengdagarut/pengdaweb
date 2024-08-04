@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "@/layouts/Layout.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
+
+import { GalleryItem } from "@/components/GalleryItem.tsx";
+import { Image } from "astro:assets";
+
+const galeriPosts = await getCollection("galeri"); // List photo
+
+---
+
+<Layout
+    title="Galeri - Pengurus Daerah Kabupaten Garut Ikatan Notaris Indonesia"
+>
+    <div class="mt-6 lg:mt-16"></div>
+    <div class="max-w-7xl mx-auto px-4 mb-4">
+        <SectionTitle title="Galeri" />
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mb-4 lg:mb-16">
+        <div class="grid grid-cols-3 gap-1 lg:gap-2 flex-wrap">
+            {
+                galeriPosts.map((item) => (
+                    <GalleryItem caption={item.data.caption} client:load>
+                        <div slot="thumbnail">
+                            <Image
+                                src={item.data.imgSrc}
+                                alt={item.data.title}
+                                width={480}
+                                class="w-full aspect-[1/1] lg:aspect-[16/10] object-cover"
+                            />
+                        </div>
+                        <div slot="theImage">
+                            <Image
+                                src={item.data.imgSrc}
+                                alt={item.data.title}
+                                width={1024}
+                                class="w-full h-auto rounded"
+                            />
+                        </div>
+                    </GalleryItem>
+                ))
+            }
+        </div>
+    </div>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "@/layouts/Layout.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
+
+// Components
+import PostListItem from "@/components/PostListItem.astro";
+
+const beritaPosts = await getCollection("berita");
+---
+
+<Layout title="Berita Pengurus Daerah Kabupaten Garut Ikatan Notaris Indonesia">
+    <div class="max-w-4xl mx-auto px-4 mb-4 mt-6 lg:mt-16">
+        <SectionTitle title="Berita Pengda" />
+        <ul>
+            {
+                beritaPosts.map((post) => (
+                    <li class="mb-4 border-b border-zinc-200 last:border-none pb-4">
+                        <PostListItem
+                            title={post.data.title}
+                            image={post.data.image}
+                            summary={post.data.summary}
+                            slug={`/berita/${post.slug}`}
+                            postDate={post.data.postDate}
+                        />
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</Layout>

@@ -1,0 +1,535 @@
+[
+  {
+    "fullName": "Budi Santoso",
+    "address": "Jl. Merdeka No. 10, Tarogong Kidul, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Tarogong Kidul",
+    "phone": ["081234567890"],
+    "email": "budi.santoso@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+    "location": {
+      "lat": -7.202926,
+      "lang": 107.905615
+    }
+  },
+  {
+    "fullName": "Ayu Lestari",
+    "address": "Jl. Ahmad Yani No. 23, Karangpawitan, Garut",
+    "kelurahan": "Karangpawitan",
+    "kecamatan": "Karangpawitan",
+    "phone": ["081234567891", "081234567892"],
+    "email": "ayu.lestari@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
+    "location": {
+      "lat": -7.215452,
+      "lang": 107.897392
+    }
+  },
+  {
+    "fullName": "Andi Wijaya",
+    "address": "Jl. Pahlawan No. 5, Garut Kota, Garut",
+    "kelurahan": "Sukakarya",
+    "kecamatan": "Garut Kota",
+    "phone": ["081234567893"],
+    "email": "andi.wijaya@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
+    "location": {
+      "lat": -7.210981,
+      "lang": 107.898267
+    }
+  },
+  {
+    "fullName": "Siti Nurhaliza",
+    "address": "Jl. Guntur No. 12, Samarang, Garut",
+    "kelurahan": "Samarang",
+    "kecamatan": "Samarang",
+    "phone": ["081234567894"],
+    "email": "siti.nurhaliza@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
+    "location": {
+      "lat": -7.236789,
+      "lang": 107.924567
+    }
+  },
+  {
+    "fullName": "Rudi Hartono",
+    "address": "Jl. Raya No. 8, Pameungpeuk, Garut",
+    "kelurahan": "Pameungpeuk",
+    "kecamatan": "Pameungpeuk",
+    "phone": ["081234567895"],
+    "email": "rudi.hartono@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
+    "location": {
+      "lat": -7.263345,
+      "lang": 107.965432
+    }
+  },
+  {
+    "fullName": "Dewi Kartika",
+    "address": "Jl. Pemuda No. 14, Wanaraja, Garut",
+    "kelurahan": "Wanaraja",
+    "kecamatan": "Wanaraja",
+    "phone": ["081234567896"],
+    "email": "dewi.kartika@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
+    "location": {
+      "lat": -7.256789,
+      "lang": 107.905432
+    }
+  },
+  {
+    "fullName": "Tono Kurniawan",
+    "address": "Jl. Sukajadi No. 11, Tarogong Kaler, Garut",
+    "kelurahan": "Hegarmanah",
+    "kecamatan": "Tarogong Kaler",
+    "phone": ["081234567897"],
+    "email": "tono.kurniawan@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/7.jpg",
+    "location": {
+      "lat": -7.213456,
+      "lang": 107.912345
+    }
+  },
+  {
+    "fullName": "Rina Marlina",
+    "address": "Jl. Rancabango No. 18, Sukawening, Garut",
+    "kelurahan": "Sindangsari",
+    "kecamatan": "Sukawening",
+    "phone": ["081234567898", "081234567899"],
+    "email": "rina.marlina@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+    "location": {
+      "lat": -7.243456,
+      "lang": 107.923456
+    }
+  },
+  {
+    "fullName": "Joko Widodo",
+    "address": "Jl. Anggrek No. 22, Banyuresmi, Garut",
+    "kelurahan": "Jayawaras",
+    "kecamatan": "Banyuresmi",
+    "phone": ["081234567900"],
+    "email": "joko.widodo@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/9.jpg",
+    "location": {
+      "lat": -7.253456,
+      "lang": 107.934567
+    }
+  },
+  {
+    "fullName": "Sri Rahayu",
+    "address": "Jl. Cempaka No. 6, Pasirwangi, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Pasirwangi",
+    "phone": ["081234567901", "081234567902"],
+    "email": "sri.rahayu@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+    "location": {
+      "lat": -7.263456,
+      "lang": 107.945678
+    }
+  },
+  {
+    "fullName": "Agus Hidayat",
+    "address": "Jl. Mawar No. 19, Cikajang, Garut",
+    "kelurahan": "Sukarasa",
+    "kecamatan": "Cikajang",
+    "phone": ["081234567903"],
+    "email": "agus.hidayat@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/11.jpg",
+    "location": {
+      "lat": -7.273456,
+      "lang": 107.956789
+    }
+  },
+  {
+    "fullName": "Maya Sari",
+    "address": "Jl. Melati No. 7, Tarogong Kidul, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Tarogong Kidul",
+    "phone": ["081234567904"],
+    "email": "maya.sari@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/12.jpg",
+    "location": {
+      "lat": -7.283456,
+      "lang": 107.967890
+    }
+  },
+  {
+    "fullName": "Rizki Ananda",
+    "address": "Jl. Karet No. 3, Karangpawitan, Garut",
+    "kelurahan": "Karangpawitan",
+    "kecamatan": "Karangpawitan",
+    "phone": ["081234567905", "081234567906"],
+    "email": "rizki.ananda@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/13.jpg",
+    "location": {
+      "lat": -7.293456,
+      "lang": 107.978901
+    }
+  },
+  {
+    "fullName": "Lina Suharti",
+    "address": "Jl. Kebon No. 2, Garut Kota, Garut",
+    "kelurahan": "Sukakarya",
+    "kecamatan": "Garut Kota",
+    "phone": ["081234567907"],
+    "email": "lina.suharti@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/14.jpg",
+    "location": {
+      "lat": -7.303456,
+      "lang": 107.989012
+    }
+  },
+  {
+    "fullName": "Hendra Gunawan",
+    "address": "Jl. Kebon No. 8, Samarang, Garut",
+    "kelurahan": "Samarang",
+    "kecamatan": "Samarang",
+    "phone": ["081234567908"],
+    "email": "hendra.gunawan@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/15.jpg",
+    "location": {
+      "lat": -7.313456,
+      "lang": 107.990123
+    }
+  },
+  {
+    "fullName": "Wulan Sari",
+    "address": "Jl. Kenanga No. 11, Pameungpeuk, Garut",
+    "kelurahan": "Pameungpeuk",
+    "kecamatan": "Pameungpeuk",
+    "phone": ["081234567909", "081234567910"],
+    "email": "wulan.sari@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/16.jpg",
+    "location": {
+      "lat": -7.323456,
+      "lang": 107.901234
+    }
+  },
+  {
+    "fullName": "Yusuf Kurnia",
+    "address": "Jl. Mangga No. 6, Tarogong Kidul, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Tarogong Kidul",
+    "phone": ["081234567911"],
+    "email": "yusuf.kurnia@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/17.jpg",
+    "location": {
+      "lat": -7.333456,
+      "lang": 107.912345
+    }
+  },
+  {
+    "fullName": "Nina Marlina",
+    "address": "Jl. Anggrek No. 2, Karangpawitan, Garut",
+    "kelurahan": "Karangpawitan",
+    "kecamatan": "Karangpawitan",
+    "phone": ["081234567912"],
+    "email": "nina.marlina@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/18.jpg",
+    "location": {
+      "lat": -7.343456,
+      "lang": 107.923456
+    }
+  },
+  {
+    "fullName": "Doni Pratama",
+    "address": "Jl. Mawar No. 5, Garut Kota, Garut",
+    "kelurahan": "Sukakarya",
+    "kecamatan": "Garut Kota",
+    "phone": ["081234567913"],
+    "email": "doni.pratama@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/19.jpg",
+    "location": {
+      "lat": -7.353456,
+      "lang": 107.934567
+    }
+  },
+  {
+    "fullName": "Ria Handayani",
+    "address": "Jl. Kamboja No. 8, Samarang, Garut",
+    "kelurahan": "Samarang",
+    "kecamatan": "Samarang",
+    "phone": ["081234567914", "081234567915"],
+    "email": "ria.handayani@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/20.jpg",
+    "location": {
+      "lat": -7.363456,
+      "lang": 107.945678
+    }
+  },
+  {
+    "fullName": "Samsul Arifin",
+    "address": "Jl. Melati No. 6, Pameungpeuk, Garut",
+    "kelurahan": "Pameungpeuk",
+    "kecamatan": "Pameungpeuk",
+    "phone": ["081234567916"],
+    "email": "samsul.arifin@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/21.jpg",
+    "location": {
+      "lat": -7.373456,
+      "lang": 107.956789
+    }
+  },
+  {
+    "fullName": "Hesti Purwanti",
+    "address": "Jl. Karet No. 11, Tarogong Kidul, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Tarogong Kidul",
+    "phone": ["081234567917"],
+    "email": "hesti.purwanti@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/22.jpg",
+    "location": {
+      "lat": -7.383456,
+      "lang": 107.967890
+    }
+  },
+  {
+    "fullName": "Fajar Rian",
+    "address": "Jl. Sukajadi No. 10, Karangpawitan, Garut",
+    "kelurahan": "Karangpawitan",
+    "kecamatan": "Karangpawitan",
+    "phone": ["081234567918", "081234567919"],
+    "email": "fajar.rian@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
+    "location": {
+      "lat": -7.393456,
+      "lang": 107.978901
+    }
+  },
+  {
+    "fullName": "Indah Sari",
+    "address": "Jl. Kebon No. 14, Garut Kota, Garut",
+    "kelurahan": "Sukakarya",
+    "kecamatan": "Garut Kota",
+    "phone": ["081234567920"],
+    "email": "indah.sari@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/24.jpg",
+    "location": {
+      "lat": -7.403456,
+      "lang": 107.989012
+    }
+  },
+  {
+    "fullName": "Dedi Suherman",
+    "address": "Jl. Kenanga No. 18, Samarang, Garut",
+    "kelurahan": "Samarang",
+    "kecamatan": "Samarang",
+    "phone": ["081234567921"],
+    "email": "dedi.suherman@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/25.jpg",
+    "location": {
+      "lat": -7.413456,
+      "lang": 107.990123
+    }
+  },
+  {
+    "fullName": "Tuti Suharti",
+    "address": "Jl. Mangga No. 11, Pameungpeuk, Garut",
+    "kelurahan": "Pameungpeuk",
+    "kecamatan": "Pameungpeuk",
+    "phone": ["081234567922", "081234567923"],
+    "email": "tuti.suharti@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
+    "location": {
+      "lat": -7.423456,
+      "lang": 107.901234
+    }
+  },
+  {
+    "fullName": "Gilang Ramadhan",
+    "address": "Jl. Merdeka No. 2, Tarogong Kidul, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Tarogong Kidul",
+    "phone": ["081234567924"],
+    "email": "gilang.ramadhan@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/27.jpg",
+    "location": {
+      "lat": -7.433456,
+      "lang": 107.912345
+    }
+  },
+  {
+    "fullName": "Mira Dewi",
+    "address": "Jl. Pemuda No. 3, Karangpawitan, Garut",
+    "kelurahan": "Karangpawitan",
+    "kecamatan": "Karangpawitan",
+    "phone": ["081234567925"],
+    "email": "mira.dewi@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/28.jpg",
+    "location": {
+      "lat": -7.443456,
+      "lang": 107.923456
+    }
+  },
+  {
+    "fullName": "Doni Firmansyah",
+    "address": "Jl. Karet No. 8, Garut Kota, Garut",
+    "kelurahan": "Sukakarya",
+    "kecamatan": "Garut Kota",
+    "phone": ["081234567926", "081234567927"],
+    "email": "doni.firmansyah@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
+    "location": {
+      "lat": -7.453456,
+      "lang": 107.934567
+    }
+  },
+  {
+    "fullName": "Rina Lestari",
+    "address": "Jl. Melati No. 4, Samarang, Garut",
+    "kelurahan": "Samarang",
+    "kecamatan": "Samarang",
+    "phone": ["081234567928"],
+    "email": "rina.lestari@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/30.jpg",
+    "location": {
+      "lat": -7.463456,
+      "lang": 107.945678
+    }
+  },
+  {
+    "fullName": "Bambang Wibowo",
+    "address": "Jl. Mawar No. 12, Pameungpeuk, Garut",
+    "kelurahan": "Pameungpeuk",
+    "kecamatan": "Pameungpeuk",
+    "phone": ["081234567929"],
+    "email": "bambang.wibowo@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/31.jpg",
+    "location": {
+      "lat": -7.473456,
+      "lang": 107.956789
+    }
+  },
+  {
+    "fullName": "Eka Pratiwi",
+    "address": "Jl. Sukajadi No. 5, Tarogong Kidul, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Tarogong Kidul",
+    "phone": ["081234567930", "081234567931"],
+    "email": "eka.pratiwi@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
+    "location": {
+      "lat": -7.483456,
+      "lang": 107.967890
+    }
+  },
+  {
+    "fullName": "Dedi Purnomo",
+    "address": "Jl. Kamboja No. 10, Karangpawitan, Garut",
+    "kelurahan": "Karangpawitan",
+    "kecamatan": "Karangpawitan",
+    "phone": ["081234567932"],
+    "email": "dedi.purnomo@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/33.jpg",
+    "location": {
+      "lat": -7.493456,
+      "lang": 107.978901
+    }
+  },
+  {
+    "fullName": "Maya Dewi",
+    "address": "Jl. Melati No. 7, Garut Kota, Garut",
+    "kelurahan": "Sukakarya",
+    "kecamatan": "Garut Kota",
+    "phone": ["081234567933"],
+    "email": "maya.dewi@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/34.jpg",
+    "location": {
+      "lat": -7.503456,
+      "lang": 107.989012
+    }
+  },
+  {
+    "fullName": "Rudi Setiawan",
+    "address": "Jl. Pemuda No. 4, Samarang, Garut",
+    "kelurahan": "Samarang",
+    "kecamatan": "Samarang",
+    "phone": ["081234567934"],
+    "email": "rudi.setiawan@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/35.jpg",
+    "location": {
+      "lat": -7.513456,
+      "lang": 107.990123
+    }
+  },
+  {
+    "fullName": "Dewi Sartika",
+    "address": "Jl. Kebon No. 9, Pameungpeuk, Garut",
+    "kelurahan": "Pameungpeuk",
+    "kecamatan": "Pameungpeuk",
+    "phone": ["081234567935", "081234567936"],
+    "email": "dewi.sartika@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/36.jpg",
+    "location": {
+      "lat": -7.523456,
+      "lang": 107.901234
+    }
+  },
+  {
+    "fullName": "Tono Santoso",
+    "address": "Jl. Sukajadi No. 14, Tarogong Kidul, Garut",
+    "kelurahan": "Tarogong",
+    "kecamatan": "Tarogong Kidul",
+    "phone": ["081234567937"],
+    "email": "tono.santoso@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/37.jpg",
+    "location": {
+      "lat": -7.533456,
+      "lang": 107.912345
+    }
+  },
+  {
+    "fullName": "Yuni Kartika",
+    "address": "Jl. Merdeka No. 6, Karangpawitan, Garut",
+    "kelurahan": "Karangpawitan",
+    "kecamatan": "Karangpawitan",
+    "phone": ["081234567938", "081234567939"],
+    "email": "yuni.kartika@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/38.jpg",
+    "location": {
+      "lat": -7.543456,
+      "lang": 107.923456
+    }
+  },
+  {
+    "fullName": "Roni Kurniawan",
+    "address": "Jl. Anggrek No. 7, Garut Kota, Garut",
+    "kelurahan": "Sukakarya",
+    "kecamatan": "Garut Kota",
+    "phone": ["081234567940"],
+    "email": "roni.kurniawan@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/39.jpg",
+    "location": {
+      "lat": -7.553456,
+      "lang": 107.934567
+    }
+  },
+  {
+    "fullName": "Siti Marlina",
+    "address": "Jl. Mawar No. 1, Samarang, Garut",
+    "kelurahan": "Samarang",
+    "kecamatan": "Samarang",
+    "phone": ["081234567941"],
+    "email": "siti.marlina@example.com",
+    "avatar": "https://randomuser.me/api/portraits/women/40.jpg",
+    "location": {
+      "lat": -7.563456,
+      "lang": 107.945678
+    }
+  },
+  {
+    "fullName": "Anto Wijaya",
+    "address": "Jl. Kamboja No. 3, Pameungpeuk, Garut",
+    "kelurahan": "Pameungpeuk",
+    "kecamatan": "Pameungpeuk",
+    "phone": ["081234567942"],
+    "email": "anto.wijaya@example.com",
+    "avatar": "https://randomuser.me/api/portraits/men/41.jpg",
+    "location": {
+      "lat": -7.573456,
+      "lang": 107.956789
+    }
+  }
+]

@@ -1,0 +1,30 @@
+---
+import SectionTitle from "@/components/SectionTitle.astro";
+import Layout from "@/layouts/Layout.astro";
+
+
+import { SearchMembers } from "@/components/SearchMembers";
+import { getEntry } from "astro:content";
+const allAnggota = await getEntry("mockup", "user");
+
+const anggota = allAnggota.data.sort((a: string, b: string) => {
+    if (a.fullName.toLowerCase() < b.fullName.toLowerCase()) {
+        return -1;
+    }
+    if (a.fullName.toLowerCase() > b.fullName.toLowerCase()) {
+        return 1;
+    }
+    return 0;
+});
+---
+
+<Layout
+    title="Anggota - Pengurus Daerah Kabupaten Garut Ikatan Notaris Indonesia"
+>
+    <div class="mt-16"></div>
+    <div class="max-w-5xl mx-auto px-4 mt-6 lg:mt-16">
+        <SectionTitle title="Anggota Notaris Kabupaten Garut" />
+    </div>
+
+    <SearchMembers data={anggota} client:load />
+</Layout>

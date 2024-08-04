@@ -1,12 +1,61 @@
 ---
 import Base from "@/layouts/base.astro";
+
+import { getCollection } from "astro:content";
+
+import NewsThumbnail from "@/components/NewsThumbnail.astro";
+
+// Content
+// List Berita
+const allBeritaPosts = await getCollection("berita")
+const beritaPosts = allBeritaPosts.sort((a,b) => (b.data.postDate.getTime()) - (a.data.postDate.getTime()))
+const latestBeritaPost = beritaPosts.slice(0, 1);
+const threeLastBeritaPosts = beritaPosts.slice(1, 4);
+
+// List Pengumuman
+const allPengumumanPosts = await getCollection("pengumuman");
+const pengumumanPosts = allPengumumanPosts.sort((a,b) => (b.data.postDate.getTime()) - (a.data.postDate.getTime()))
+const pengumumanLastest = pengumumanPosts.slice(0, 6);
+
+// List Artikel
+const allArtikelPosts = await getCollection("artikel");
+const artikelPosts = allArtikelPosts.sort((a,b) => (b.data.postDate.getTime()) - (a.data.postDate.getTime()))
+const latestArticlePost = artikelPosts.slice(0, 1);
+const threeLastArticlePosts = artikelPosts.slice(1, 4);
+
+// List Gallery
+const allGaleriPosts = await getCollection("galeri"); // List photo
+const galeriPosts = allGaleriPosts.sort((a,b) => (b.data.postDate.getTime()) - (a.data.postDate.getTime()))
+const lastGaleri = galeriPosts.slice(0, 3);
+
+const newsThumbSize = (position:number) => (
+    position === 0 ? "col-span-2 row-span-3": "row-span-1 col-span-1"
+)
 ---
 
 <Base title="Beranda">
-    <div class="container">
-        <h1 class="font-serif">
-            Konferensi Daerah Ikatan Notaris Indonesia Kabupaten Garut 2024:
-            Momen Demokrasi dan Solidaritas Profesi Hukum
-        </h1>
+    <div class="container lg:flex gap-4">
+        <div class="lg:w-4/5 mt-4">
+            <h2 class="h4 mb-2">Berita Terkini</h2>
+            <ul class="grid grid-cols-3 grid-rows-3 grid-flow-col gap-4">
+                {
+                    allBeritaPosts.map((post, idx) => (
+                        <li class={`overflow-hidden ${newsThumbSize(idx)}`}>
+                            <NewsThumbnail 
+                                title={post.data.title} 
+                                image={post.data.image} 
+                                href={post.slug}
+                                postDate={post.data.postDate} 
+                            />
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+        <div class="border-l"></div>
+        <div class="lg:w-1/5 mt-4">
+            <h2 class="h4">Pengumuman</h2>
+            <ul></ul>
+        </div>
     </div>
 </Base>
