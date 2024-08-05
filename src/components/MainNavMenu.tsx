@@ -34,7 +34,7 @@ const MenuItem: React.FC<NavMenu> = ({ title, href, subMenu }) => {
 
     return (
         <NavigationMenuItem>
-            <NavigationMenuTrigger>{title}</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent">{title}</NavigationMenuTrigger>
             <NavigationMenuContent>
             <ul className="w-[400px] p-4">
                     {

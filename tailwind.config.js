@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       "sans": ['Inter', 'sans-serif'],
-      "serif" : ['"DM Serif Text"', "serif"],
+      "serif": ['"DM Serif Text"', "serif"],
       'mono': ['"Courier Prime"', 'monospace'],
     },
     container: {
@@ -73,5 +73,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography'),],
 }
