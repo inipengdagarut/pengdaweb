@@ -88,3 +88,11 @@
 .blockquote {
   @apply mt-6 border-l-2 pl-6 italic
 }
+
+.lead {
+  @apply text-xl text-muted-foreground;
+}
+
+.test {
+  background-color: #fff;
+}
