@@ -1,0 +1,40 @@
+---
+interface Props {
+    title: string;
+    summary?: string;
+    href: string;
+    image: string;
+    postDate: string | number | Date;
+}
+import { Image } from "astro:assets";
+import Date from "@/components/Date.astro";
+
+const { href, title, summary, image, postDate } = Astro.props;
+---
+
+<div class="lg:flex gap-2">
+    <div class="lg:w-2/3 block" }>
+        <div class="mb-4 lg:mb-0">
+            <a href={href}>
+                <Image
+                    src={image}
+                    alt={`picture of ${title}`}
+                    widths={[1024, 480]}
+                    inferSize={true}
+                    class="w-full aspect-[16/10] object-cover rounded"
+                />
+            </a>
+        </div>
+    </div>
+    <div class="lg:w-1/3 lg:pl-2">
+        <div>
+            <Date time={postDate} className="mb-1 uppercase font-semibold text-muted-foreground text-xs"/>
+        </div>
+        <h2 class="text-xl lg:text-4xl mb-4 font-serif font-normal">
+            <a class="animate-in duration-150 hover:underline" href={href}
+                >{title}</a
+            >
+        </h2>
+        <p class="line-clamp-3">{summary}</p>
+    </div>
+</div>
