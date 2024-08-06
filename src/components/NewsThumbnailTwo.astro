@@ -4,7 +4,7 @@ interface Props {
     postDate: string | number | Date;
     author: string;
     href: string;
-    image: ImageMetadata;
+    image?: string;
     summary: string
 }
 import { Image } from "astro:assets";
@@ -17,13 +17,17 @@ const { title, postDate, author, href, image, summary } = Astro.props;
     <div class=" block" }>
         <div class="mb-4">
             <a href={href}>
-            <Image
-                src={image}
-                alt={`picture of ${title}`}
-                widths={[1024, 480]}
-                inferSize={true}
-                class="w-full aspect-[16/10] object-cover rounded"
-            />
+                {
+                    image ? (
+                        <Image
+                            src={image}
+                            alt={`picture of ${title}`}
+                            widths={[1024, 480]}
+                            inferSize={true}
+                            class="w-full aspect-[16/10] object-cover rounded"
+                    />):
+                    ("")
+                }
             </a>
         </div>
     </div>

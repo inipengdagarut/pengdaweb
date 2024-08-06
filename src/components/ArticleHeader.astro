@@ -1,0 +1,31 @@
+---
+interface Props {
+    title: string;
+    postDate: string | number | Date;
+    author: string;
+    href: string;
+    image?: string;
+    summary?: string;
+}
+
+import { Image } from "astro:assets";
+import Date from "@/components/Date.astro";
+
+const { title, postDate, author, href, image, summary } = Astro.props;
+---
+
+<>
+    <div class="text-center mb-2">
+        <Date
+            time={postDate}
+            className="mb-1 uppercase font-semibold text-muted-foreground text-xs"
+        />
+    </div>
+    <h1 class="font-serif font-normal text-center mb-4 lg:mb-4">
+        <a href={href} class="no-underline hover:underline">{title}</a>
+    </h1>
+    <p class="capitalize font-semibold text-muted-foreground text-xs text-center mt-0">Oleh : <a href={`/author/${author}`}>{author}</a></p>
+    <p class="lg:mb-0">
+       {summary}
+    </p>
+</>
