@@ -6,6 +6,7 @@ import { getCollection } from "astro:content";
 import NewsThumbnail from "@/components/NewsThumbnail.astro";
 import NewsThumbnailTwo from "@/components/NewsThumbnailTwo.astro";
 import NewsThumbnailThree from "@/components/NewsThumbnailThree.astro";
+import ArticleHeader from "@/components/ArticleHeader.astro";
 
 // Content
 // List Berita
@@ -49,7 +50,7 @@ const newsThumbSize = (position: number) =>
         <div class="lg:w-4/5 mt-4">
             <h2 class="h4 mb-2">Berita Terkini</h2>
             <ul
-                class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 lg:grid-flow-row gap-4"
+                class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 lg:grid-flow-row gap-4"
             >
                 {
                     allBeritaPosts.map((post, idx) => (
@@ -83,7 +84,7 @@ const newsThumbSize = (position: number) =>
                 }
             </ul>
         </div>
-        <div class="border-l"></div>
+        <div class="border-t lg:border-l"></div>
         <div class="lg:w-1/5 mt-4">
             <h2 class="h4">Pengumuman</h2>
             <ul></ul>
@@ -92,14 +93,33 @@ const newsThumbSize = (position: number) =>
     <div class="container border-t">
         <h2 class="h4 mb-2 mt-4">Artikel</h2>
         <div class="prose lg:prose-xl mx-auto">
-            <h1 class="font-serif font-normal text-center">
-                Peran, Fungsi dan Keberadaan Notaris Indonesia
-            </h1>
-            <p class="">
-                ​Peran notaris sejalan dengan politik hukum pemerintah di dalam
-                pembuatan akta berkaitan dengan pendirian perusahan, peraturan
-                dalam rangka pemenuhan Ease of Doing Business di Indonesia.
-            </p>
+            <ul class="list-none grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 lg:grid-flow-row gap-4">
+            {
+                artikelPosts.map((post, idx) => (
+                    <>
+                        {idx === 0 ? (
+                            <li class={`overflow-hidden ${newsThumbSize(idx)}`}>
+                            <ArticleHeader
+                                title={post.data.title}
+                                postDate={post.data.postDate}
+                                summary={post.data.summary}
+                                author={post.data.author}
+                                href={post.slug}
+                            />
+                            </li>
+                        ) : (
+                            <li class={`not-prose ${newsThumbSize(idx)}`}>
+                            <NewsThumbnailTwo
+                                title={post.data.title}
+                                href={post.slug}
+                                postDate={post.data.postDate}
+                            />
+                            </li>
+                        )}
+                    </>
+                ))
+            }
+            </ul>
         </div>
     </div>
 </Base>

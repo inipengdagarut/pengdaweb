@@ -1,17 +1,31 @@
 import { z, defineCollection } from 'astro:content';
 
+// const beritaPostCollections = defineCollection({
+//     type: 'content',
+//     schema: ({ image }) => z.object({
+//         title: z.string(),
+//         postDate: z.string().transform(str => new Date(str)),
+//         author: z.string().default('Redaksi'),
+//         image: image().optional(),
+//         draft: z.boolean(),
+//         summary: z.string().optional(),
+//         tags: z.array(z.string()).optional()
+//     })
+// })
+
 const beritaPostCollections = defineCollection({
     type: 'content',
     schema: ({ image }) => z.object({
         title: z.string(),
         postDate: z.string().transform(str => new Date(str)),
         author: z.string().default('Redaksi'),
-        image: image().optional(),
+        image: image(),
         draft: z.boolean(),
         summary: z.string().optional(),
         tags: z.array(z.string()).optional()
     })
 })
+
 
 const artikelPostCollections = defineCollection({
     type: 'content',
