@@ -1,8 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 
-import Layout from "@/layouts/Layout.astro";
-import SectionTitle from "@/components/SectionTitle.astro";
+import Layout from "@/layouts/base.astro";
+
 
 // Components
 import PostListItem from "@/components/PostListItemTwo.astro";
@@ -12,7 +12,7 @@ const pengumumanPosts = await getCollection("pengumuman");
 
 <Layout title="Pengumuman Pengurus Daerah Kabupaten Garut Ikatan Notaris Indonesia">
     <div class="max-w-4xl mx-auto px-4 mb-4 mt-6 lg:mt-16">
-        <SectionTitle title="Pengumuman" />
+
         <ul>
             {
                 pengumumanPosts.map((post) => (
@@ -21,7 +21,7 @@ const pengumumanPosts = await getCollection("pengumuman");
                             title={post.data.title}
                             image={post.data.image}
                             summary={post.data.summary}
-                            slug={`/pengumuman/${post.slug}`}
+                            href={`/pengumuman/${post.slug}`}
                             postDate={post.data.postDate}
                         />
                     </li>
