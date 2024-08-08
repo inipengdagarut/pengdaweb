@@ -48,16 +48,18 @@ const newsThumbSize = (position: number) =>
     <div class="container flex gap-4">
         <div class="lg:w-3/4">
             <h2>Berita Terkini</h2>
-            <ul class="lg:grid grid-cols-3 grid-flow-row-dense gap-4">
+            <ul class="lg:grid grid-cols-3 grid-rows-2 grid-flow-row-dense gap-4">
                 {
                     latestBeritaPost.map((post, idx) => (
                         <>
                             {idx === 0 ? (
-                                <li class="col-span-2">
+                                <li class="col-span-2 row-span-2 col-start-2 row-start-1 border-l lg:pl-4">
+                                    <div class="w-full aspect-[16/10] bg-red-500"></div>
                                     <h2>{post.data.title}</h2>
                                 </li>
                             ) : (
-                                <li class="col-span-1">
+                                <li class="col-start-1">
+                                    <div class="w-full aspect-[16/10] bg-red-500"></div>
                                     <h2>{post.data.title}</h2>
                                 </li>
                             )}
