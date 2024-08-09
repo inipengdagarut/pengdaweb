@@ -6,7 +6,8 @@ import { getCollection } from "astro:content";
 import NewsThumbnail from "@/components/NewsThumbnail.astro";
 import NewsThumbnailTwo from "@/components/NewsThumbnailTwo.astro";
 import NewsThumbnailThree from "@/components/NewsThumbnailThree.astro";
-import PostListItemTwo from '@/components/PostListItemTwo.astro'
+import PostListItemTwo from "@/components/PostListItemTwo.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
 
 // Content
 // List Berita
@@ -48,10 +49,7 @@ const newsThumbSize = (position: number) =>
 <Base title="Beranda">
     <div class="container lg:flex gap-4">
         <div class="lg:w-3/4">
-            <div class="my-4 flex justify-between items-center">
-                <h2 class="text-xl font-semibold">Berita Terkini</h2>
-                <a href="/berita" class="text-xs font-normal text-muted-foreground hover:underline">Semua berita</a>
-            </div>
+            <SectionTitle title="berita terkini" href="/berita/" />
             <ul
                 class="lg:grid grid-cols-3 grid-rows-1 grid-flow-col-dense gap-4"
             >
@@ -86,27 +84,28 @@ const newsThumbSize = (position: number) =>
         </div>
         <div class="border-l"></div>
         <div class="lg:w-1/4">
-            <div class="my-4 flex justify-between items-center">
-                <h2 class="text-xl font-semibold">Pengumuman</h2>
-                <a href="/berita" class="text-xs font-normal text-muted-foreground hover:underline">Semua pengumuman</a>
-            </div>
+            <SectionTitle title="pengumuman" href="/pengumuman/" />
             <ul>
-                {pengumumanLastest.map((post, idx) => (
-                    <li class="border-b mb-4 last:border-0">
-                        <div>
-                            <PostListItemTwo 
-                                title={post.data.title}
-                                image={post.data.image}
-                                href={`/pengumuman/${post.slug}`}
-                                size='sm'
-                            />
-                        </div>
-                    </li>
-                ))}
+                {
+                    pengumumanLastest.map((post, idx) => (
+                        <li class="border-b mb-4 last:border-0">
+                            <div>
+                                <PostListItemTwo
+                                    title={post.data.title}
+                                    image={post.data.image}
+                                    href={`/pengumuman/${post.slug}`}
+                                    size="sm"
+                                />
+                            </div>
+                        </li>
+                    ))
+                }
             </ul>
         </div>
     </div>
     <div class="container border-t">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero saepe, in, officiis a provident id neque omnis magnam voluptatum autem facere ipsam. Facilis non corporis velit corrupti, harum in?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero
+        saepe, in, officiis a provident id neque omnis magnam voluptatum autem
+        facere ipsam. Facilis non corporis velit corrupti, harum in?
     </div>
 </Base>

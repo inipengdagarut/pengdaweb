@@ -1,0 +1,23 @@
+---
+interface Props {
+    title: string;
+    href?: string;
+}
+
+import {ArrowRightIcon} from '@radix-ui/react-icons'
+
+const {title, href} = Astro.props
+---
+
+<div class="my-4 mb-4 flex justify-between items-center capitalize">
+    {href ? (
+        <h2 class="text-md font-semibold">
+            <a href={href} class="hover:text-muted-foreground">{title}</a>
+        </h2>
+        <a href={href} class="text-xs font-normal text-muted-foreground hover:underline flex gap-4 items-center">
+            <ArrowRightIcon />
+        </a>
+    ):(
+        <h2 class="text-xl font-semibold">{title}</h2>
+    )}
+</div>
