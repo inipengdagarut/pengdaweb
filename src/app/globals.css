@@ -96,3 +96,7 @@
 .test {
   background-color: #fff;
 }
+
+.red-gradient {
+  background: linear-gradient(120deg, #d53369 0%, #daae51 100%);
+}

@@ -1,0 +1,18 @@
+---
+import Base from "@/layouts/base.astro";
+
+interface Props {
+    title: string;
+    image?: string;
+    author: string;
+    postDate: string | Date | number;
+    summary?: string;
+}
+import { Image } from "astro:assets";
+import Date from "@/components/Date.astro";
+
+const { image, author, title, postDate, summary } = Astro.props;
+---
+<Base>
+
+</Base>

@@ -14,4 +14,4 @@ dayjs.locale("id");
 const { className, time } = Astro.props;
 ---
 
-<div class={className}>{dayjs(time).format("DD MMMM YYYY")} </div>
+<span class={className}>{dayjs(time).format("DD MMMM YYYY")} </span>

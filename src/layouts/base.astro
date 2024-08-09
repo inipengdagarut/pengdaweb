@@ -1,7 +1,12 @@
 ---
 import "@/app/globals.css";
 
+import Nav from '@/app/inlineMenu';
+
+import MainFooter from "@/components/MainFooter.astro";
 import MainHeader from "@/components/MainHeader.astro";
+
+
 
 const { title } = Astro.props;
 ---
@@ -22,8 +27,13 @@ const { title } = Astro.props;
 			rel="stylesheet"
 		/>
 	</head>
-	<body>
-		<MainHeader />
-		<slot />
+	<body class="min-h-screen flex flex-col justify-between">
+		<div>
+			<MainHeader />
+			<slot />
+		</div>
+		<div>
+			<MainFooter nav={Nav} />
+		</div>
 	</body>
 </html>
