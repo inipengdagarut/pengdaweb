@@ -8,6 +8,7 @@ interface Props {
     image?: string;
     summary?: string;
     size?: "sm" | "normal" | "lg";
+    author:string;
 }
 
 // Components
@@ -31,7 +32,7 @@ const textSize = (size: Props["size"]) => {
     };
 };
 
-const { postDate, href, title, image, summary, size = "normal" } = Astro.props;
+const { postDate, href, title, image, summary, author = 'Redaksi', size = "normal" } = Astro.props;
 ---
 
 <div class={`${size === "sm" ? "flex" : ""} lg:flex flex-row-reverse justify-between gap-4`}>

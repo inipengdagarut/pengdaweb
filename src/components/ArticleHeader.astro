@@ -1,0 +1,40 @@
+---
+import Date from '@/components/Date.astro';
+
+interface Props {
+    postDate: string | Date | number;
+    href: string;
+    title: string;
+    image?: string;
+    summary?: string;
+    size?: "sm" | "normal" | "lg";
+    author: string;
+}
+
+const {postDate, href, title, image, summary, size, author } = Astro.props
+
+const textSize = (size:Props['size']) => {
+    if (size === 'lg') {
+        return {
+            titleText: 'text-2xl lg:text-4xl text-center font-serif mt-2 mb-2 lg:mt-2 font-normal'
+        }
+    }
+    return {
+            titleText: 'text-2xl text-center font-serif mt-2 mb-2 lg:mt-2 font-normal'
+        }
+}
+
+---
+
+<div class="max-w-[72ch] mx-auto">
+    <Date time={postDate} className={'mb-1 uppercase font-semibold text-muted-foreground text-xs text-center'} />
+    <h2 class={textSize(size).titleText}>
+        <a href={href} class="hover:underline">{title}</a>
+    </h2>
+    <div class="text-center capitalize font-semibold text-sm text-muted-foreground mb-2">
+        Oleh : {author}
+    </div>
+    {
+        summary ? (<p class="line-clamp-3 lg:text-lg lg:text-center">{summary}</p>) : undefined
+    }
+</div>
